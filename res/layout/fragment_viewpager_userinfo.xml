@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_editprofile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip" >
+
+        <ImageView
+            android:id="@+id/profile_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/profile_edit" />
+
+        <ImageView
+            android:id="@+id/profile_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/profile_store" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_self"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20.0dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="126.0dip"
+                    android:layout_marginTop="16.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingTop="15.0dip" >
+
+                    <ImageView
+                        android:id="@+id/dialog_avatar_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/profile_avatar_frame" />
+
+                    <ImageView
+                        android:id="@+id/imageview_profile_edit_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/dialog_avatar_frame"
+                        android:layout_alignLeft="@id/dialog_avatar_frame"
+                        android:layout_alignRight="@id/dialog_avatar_frame"
+                        android:layout_alignTop="@id/dialog_avatar_frame"
+                        android:padding="3.0dip"
+                        android:src="@drawable/left_icon_avatar" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54.0dip"
+                        android:text="昵称"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/edittext_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:text="超级锤子"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54.0dip"
+                        android:text="电话"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/textview_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview2"
+                        android:background="@null"
+                        android:maxLength="20"
+                        android:text="256045458"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54.0dip"
+                        android:background="@null"
+                        android:text="年龄"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/textview_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview3"
+                        android:background="@null"
+                        android:maxLength="20"
+                        android:text="主人比较懒还没填写"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="37.0dip"
+                        android:background="@null"
+                        android:text="居住地"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/textview_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview4"
+                        android:background="@null"
+                        android:maxLength="20"
+                        android:text="华中科技大学"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

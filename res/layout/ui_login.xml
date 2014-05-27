@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_profile_background"
+    android:orientation="vertical" >
+
+    <com.app.letusgo.util.ImageUtil
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25.0dip"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dip"
+        android:maxWidth="80dip"
+        android:src="@drawable/head_image_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/login_tv_title"
+            android:layout_width="224dip"
+            android:layout_height="36.0dip"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/orange"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/login_submit_account_title" />
+
+        <EditText
+            android:id="@+id/login_edittext_username"
+            android:layout_width="224.0dip"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/login_tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/setting_goal_box_bg"
+            android:ems="10"
+            android:hint="@string/login_username"
+            android:inputType="textEmailAddress"
+            android:maxLength="@integer/MAX36"
+            android:paddingLeft="5.0dip"
+            android:singleLine="true"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="14.0sp" />
+
+        <EditText
+            android:id="@+id/login_edittext_password"
+            android:layout_width="224.0dip"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/login_edittext_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/setting_goal_box_bg"
+            android:ems="10"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:maxLength="@integer/MAX36"
+            android:paddingLeft="5.0dip"
+            android:singleLine="true"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="14.0sp" />
+
+        <EditText
+            android:id="@+id/login_edittext_nickname"
+            android:layout_width="224.0dip"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/login_edittext_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/setting_goal_box_bg"
+            android:ems="10"
+            android:hint="@string/login_nickname"
+            android:inputType="textCapCharacters"
+            android:maxLength="@integer/MAX36"
+            android:paddingLeft="5.0dip"
+            android:singleLine="true"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="14.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_container"
+            android:layout_width="224.0dip"
+            android:layout_height="72.0dip"
+            android:layout_below="@id/login_edittext_nickname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25.0dip"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/login_btn_submit"
+                android:layout_width="80dip"
+                android:layout_height="36dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_orange_sel"
+                android:focusable="true"
+                android:text="@string/login_submit" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="80dip"
+                android:layout_height="36dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_dark_sel"
+                android:focusable="true"
+                android:text="@string/login_register" />
+
+            <Button
+                android:id="@+id/login_btn_getpassword"
+                android:layout_width="80.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/login_btn_submit"
+                android:layout_centerHorizontal="true"
+                android:background="@color/clear"
+                android:gravity="bottom"
+                android:text="@string/login_getpassword"
+                android:textColor="@color/red"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

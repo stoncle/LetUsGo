@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/sidebar_user_info_bg"
+    android:orientation="vertical" >
+
+    <com.superman.letusgo.ui.util.RoundedImageUtil
+        android:id="@+id/headImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25.0dip"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dip"
+        android:maxWidth="80dip"
+        android:src="@drawable/head_image_default" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.0dip"
+        android:text="username"
+        android:textColor="#ffccccc6"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

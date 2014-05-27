@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#f1e3e4</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#FFFFEE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text">#333333</color>
+    <color name="loading">#99000000</color>
+    <color name="activity_bg">#fff0f0f0</color>
+    <color name="clear">#00000000</color>
+    <color name="light_grey">#ffc0c0c0</color>
+    <color name="middle_grey">#ff808080</color>
+    <color name="dark_grey">#ff404040</color>
+    <color name="orange">#ffdd7a58</color>
+     <color name="white_line">#50ffffff</color>
+      <color name="classB">#353535</color>
+        <color name="common_white">#ffffff</color>
+
+</resources>
