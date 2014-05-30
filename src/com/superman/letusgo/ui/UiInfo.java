@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.superman.letusgo.R;
 
@@ -15,6 +16,9 @@ public class UiInfo extends Fragment {
 
 	SectionsPagerAdapter mSectionsPagerAdapter;
 	ViewPager mViewPager;
+	
+	
+	
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,6 +29,9 @@ public class UiInfo extends Fragment {
 				getFragmentManager());
 		mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
+		
+		
+		
 
 		return rootView;
 	}
@@ -39,9 +46,9 @@ public class UiInfo extends Fragment {
 		public Fragment getItem(int position) {
 			switch (position) {
 			case 0:
-				return new fragment_viewpager_userinfo();
+				return new FragmentViewpagerUserinfo();
 			case 1:
-				return new fragment_viewpager_actievent();
+				return new FragmentViewpagerActievent();
 			}
 			return null;
 

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/profile_userinfo_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview_self"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="37.0dip"
+                        android:text="用户名"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_profile_userinfo_new_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview1"
+                        android:background="@null"
+                        android:hint="新用户名"
+                        android:maxLength="10"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54.0dip"
+                        android:text="性别"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_profile_userinfo_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview2"
+                        android:background="@null"
+                        android:hint="男或女"
+                        android:maxLength="1"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54.0dip"
+                        android:background="@null"
+                        android:text="年龄"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_profile_userinfo_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview3"
+                        android:background="@null"
+                        android:hint="20"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="37.0dip"
+                        android:background="@null"
+                        android:text="居住地"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_profile_userinfo_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_toRightOf="@id/textview4"
+                        android:background="@null"
+                        android:hint="湖北武汉"
+                        android:maxLength="20"
+                        android:textColor="#ffffffff"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17.0sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@color/white_line" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

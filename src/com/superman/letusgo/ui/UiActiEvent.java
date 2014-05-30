@@ -3,6 +3,7 @@ package com.superman.letusgo.ui;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -36,6 +38,8 @@ public class UiActiEvent extends Fragment {
 	private ArrayAdapter<String> mAdapter;
 	private LinkedList<String> mListItems;
 	private PullToRefreshListView mPullRefreshListView;
+	
+	private ImageButton mBtnLaunchActi;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,7 +47,18 @@ public class UiActiEvent extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_acti_event,
 				container, false);
 		mPullRefreshListView = (PullToRefreshListView) rootView.findViewById(R.id.acti_event_ietm_listview);
+		mBtnLaunchActi = (ImageButton)rootView.findViewById(R.id.launch_acti_event_btn);
+		mBtnLaunchActi.setOnClickListener(new View.OnClickListener(){
 
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+//				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+				intent.setClass(getActivity(), UiLaunchActi.class);
+				startActivity(intent);
+			}
+			
+		});
 		// Set a listener to be invoked when the list should be
 		// refreshed.
 		mPullRefreshListView

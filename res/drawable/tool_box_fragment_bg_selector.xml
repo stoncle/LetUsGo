@@ -3,7 +3,7 @@
 
     <item android:drawable="@drawable/tool_box_fragment_bg_selected" 
         android:state_selected="true"/>
-    <item android:drawable="@drawable/sidebar_user_info_bg" 
+    <item android:drawable="@drawable/userinfo_bg" 
         android:state_pressed="false" android:state_selected="false"/>
     <item android:drawable="@drawable/btn_dark_down" 
         android:state_pressed="true" android:state_selected="false"/>

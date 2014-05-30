@@ -15,7 +15,7 @@ public final class R {
         public static final int slide_out_to_top=0x7f040003;
     }
     public static final class array {
-        public static final int toolbox_array=0x7f0b0000;
+        public static final int toolbox_array=0x7f0c0000;
     }
     public static final class attr {
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -221,6 +221,9 @@ containing a value of this type.
          */
         public static final int type=0x7f01001b;
     }
+    public static final class bool {
+        public static final int abc_action_bar_expanded_action_views_exclusive=0x7f0a0000;
+    }
     public static final class color {
         public static final int activity_bg=0x7f090007;
         public static final int bg=0x7f090000;
@@ -229,6 +232,8 @@ containing a value of this type.
         public static final int clear=0x7f090008;
         public static final int common_white=0x7f09000f;
         public static final int dark_grey=0x7f09000b;
+        public static final int edit_hint_text_color=0x7f090010;
+        public static final int edit_text_color=0x7f090011;
         public static final int gray=0x7f090002;
         public static final int light_grey=0x7f090009;
         public static final int loading=0x7f090006;
@@ -236,11 +241,19 @@ containing a value of this type.
         public static final int orange=0x7f09000c;
         public static final int red=0x7f090001;
         public static final int text=0x7f090005;
-        public static final int toggle_button_text=0x7f090010;
+        public static final int toggle_button_text=0x7f090012;
         public static final int white=0x7f090004;
         public static final int white_line=0x7f09000d;
     }
     public static final class dimen {
+        public static final int abc_action_bar_default_height=0x7f070012;
+        public static final int abc_action_bar_icon_vertical_padding=0x7f070013;
+        public static final int abc_action_bar_subtitle_bottom_margin=0x7f070014;
+        public static final int abc_action_bar_subtitle_text_size=0x7f070015;
+        public static final int abc_action_bar_subtitle_top_margin=0x7f070016;
+        public static final int abc_action_bar_title_text_size=0x7f070017;
+        public static final int abc_action_button_min_width=0x7f070018;
+        public static final int abc_search_view_text_min_width=0x7f070019;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -261,185 +274,203 @@ containing a value of this type.
     
          */
         public static final int navigation_drawer_width=0x7f070007;
+        public static final int text1Size=0x7f070008;
+        public static final int text2Size=0x7f070009;
+        public static final int text3Size=0x7f07000a;
+        public static final int text4Size=0x7f07000b;
+        public static final int text5Size=0x7f07000c;
+        public static final int text6Size=0x7f07000d;
+        public static final int text7Size=0x7f07000e;
+        public static final int text8Size=0x7f07000f;
+        public static final int text9Size=0x7f070010;
+        public static final int textminSize=0x7f070011;
     }
     public static final class drawable {
         public static final int about=0x7f020000;
-        public static final int action_openmap=0x7f020001;
-        public static final int action_search=0x7f020002;
-        public static final int btn_action_search=0x7f020003;
-        public static final int btn_dark=0x7f020004;
-        public static final int btn_dark_down=0x7f020005;
-        public static final int btn_dark_sel=0x7f020006;
-        public static final int btn_login_cancel_sel=0x7f020007;
-        public static final int btn_orange=0x7f020008;
-        public static final int btn_orange_down=0x7f020009;
-        public static final int btn_orange_sel=0x7f02000a;
-        public static final int button_1=0x7f02000b;
-        public static final int button_2=0x7f02000c;
-        public static final int default_ptr_flip=0x7f02000d;
-        public static final int default_ptr_rotate=0x7f02000e;
-        public static final int drawer_shadow=0x7f02000f;
-        public static final int head_image_default=0x7f020010;
-        public static final int ic_drawer=0x7f020011;
-        public static final int ic_launcher=0x7f020012;
-        public static final int indicator_arrow=0x7f020013;
-        public static final int indicator_bg_bottom=0x7f020014;
-        public static final int indicator_bg_top=0x7f020015;
-        public static final int launch_event__btn_pressed=0x7f020016;
-        public static final int launch_event__btn_selector=0x7f020017;
-        public static final int launch_event_btn=0x7f020018;
-        public static final int left_icon_avatar=0x7f020019;
-        public static final int login_bg_title=0x7f02001a;
-        public static final int login_btn_cancel=0x7f02001b;
-        public static final int login_btn_cancel_down=0x7f02001c;
-        public static final int login_btn_sinaweibo=0x7f02001d;
-        public static final int login_btn_sinaweibo_down=0x7f02001e;
-        public static final int login_text_input=0x7f02001f;
-        public static final int main_bg=0x7f020020;
-        public static final int map_menu_btn_normal=0x7f020021;
-        public static final int map_menu_btn_pressed=0x7f020022;
-        public static final int map_menu_btn_selector=0x7f020023;
-        public static final int profile_avatar_frame=0x7f020024;
-        public static final int profile_back=0x7f020025;
-        public static final int profile_edit=0x7f020026;
-        public static final int profile_store=0x7f020027;
-        public static final int setting_goal_box_bg=0x7f020028;
-        public static final int setting_item_arrow=0x7f020029;
-        public static final int sidebar_user_info_bg=0x7f02002a;
-        public static final int toggle_btn_bg_pressed=0x7f02002b;
-        public static final int toggle_btn_new_bg=0x7f02002c;
-        public static final int toggle_button_off=0x7f02002d;
-        public static final int toggle_button_on=0x7f02002e;
-        public static final int toggle_list_item_arrow=0x7f02002f;
-        public static final int toggle_list_item_bkg=0x7f020030;
-        public static final int tool_box_fragment_bg_normal=0x7f020031;
-        public static final int tool_box_fragment_bg_pressed=0x7f020032;
-        public static final int tool_box_fragment_bg_selected=0x7f020033;
-        public static final int tool_box_fragment_bg_selector=0x7f020034;
-        public static final int tool_box_fragment_event_icon=0x7f020035;
-        public static final int tool_box_fragment_settings_icon=0x7f020036;
-        public static final int tool_box_fragment_userinfo_icon=0x7f020037;
-        public static final int user_profile_background=0x7f020038;
-        public static final int xml_login_bg=0x7f020039;
-        public static final int xml_login_btn=0x7f02003a;
+        public static final int about_300=0x7f020001;
+        public static final int about_400=0x7f020002;
+        public static final int about_500=0x7f020003;
+        public static final int action_openmap=0x7f020004;
+        public static final int action_search=0x7f020005;
+        public static final int arrow=0x7f020006;
+        public static final int btn_backup=0x7f020007;
+        public static final int btn_dark=0x7f020008;
+        public static final int btn_dark_down=0x7f020009;
+        public static final int btn_dark_sel=0x7f02000a;
+        public static final int btn_orange=0x7f02000b;
+        public static final int btn_orange_down=0x7f02000c;
+        public static final int btn_orange_sel=0x7f02000d;
+        public static final int default_ptr_flip=0x7f02000e;
+        public static final int default_ptr_rotate=0x7f02000f;
+        public static final int drawer_shadow=0x7f020010;
+        public static final int head_image_default=0x7f020011;
+        public static final int ic_drawer=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int indicator_arrow=0x7f020014;
+        public static final int indicator_bg_bottom=0x7f020015;
+        public static final int indicator_bg_top=0x7f020016;
+        public static final int launch_event__btn_pressed=0x7f020017;
+        public static final int launch_event__btn_selector=0x7f020018;
+        public static final int launch_event_btn=0x7f020019;
+        public static final int left_icon_avatar=0x7f02001a;
+        public static final int login_text_input=0x7f02001b;
+        public static final int main_bg=0x7f02001c;
+        public static final int map_menu_btn_normal=0x7f02001d;
+        public static final int map_menu_btn_pressed=0x7f02001e;
+        public static final int map_menu_btn_selector=0x7f02001f;
+        public static final int profile_avatar_frame=0x7f020020;
+        public static final int profile_back=0x7f020021;
+        public static final int profile_edit=0x7f020022;
+        public static final int profile_position=0x7f020023;
+        public static final int profile_store=0x7f020024;
+        public static final int setting_goal_box_bg=0x7f020025;
+        public static final int setting_item_arrow=0x7f020026;
+        public static final int title_separated=0x7f020027;
+        public static final int toggle_btn_bg_pressed=0x7f020028;
+        public static final int toggle_btn_new_bg=0x7f020029;
+        public static final int toggle_button_off=0x7f02002a;
+        public static final int toggle_button_on=0x7f02002b;
+        public static final int toggle_list_item_arrow=0x7f02002c;
+        public static final int toggle_list_item_bkg=0x7f02002d;
+        public static final int tool_box_fragment_bg_normal=0x7f02002e;
+        public static final int tool_box_fragment_bg_pressed=0x7f02002f;
+        public static final int tool_box_fragment_bg_selected=0x7f020030;
+        public static final int tool_box_fragment_bg_selector=0x7f020031;
+        public static final int tool_box_fragment_event_icon=0x7f020032;
+        public static final int tool_box_fragment_settings_icon=0x7f020033;
+        public static final int tool_box_fragment_userinfo_icon=0x7f020034;
+        public static final int userinfo_bg=0x7f020035;
     }
     public static final class id {
+        public static final int RelativeLayout=0x7f060033;
         public static final int RelativeLayout1=0x7f06000c;
-        public static final int aboutInfoLayout=0x7f060018;
-        public static final int acti_event_ietm_listview=0x7f06001d;
-        public static final int action_websearch=0x7f06004a;
-        public static final int activityInfoLayout=0x7f060015;
-        public static final int activity_root=0x7f060041;
+        public static final int aboutInfoLayout=0x7f06001e;
+        public static final int acti_event_ietm_listview=0x7f060024;
+        public static final int action_openmap=0x7f060056;
+        public static final int action_websearch=0x7f060055;
+        public static final int activityInfoLayout=0x7f06001b;
+        public static final int activity_root=0x7f06004c;
         public static final int both=0x7f060003;
-        public static final int container=0x7f060019;
-        public static final int content_frame=0x7f060012;
-        public static final int dialog_avatar_frame=0x7f06002b;
+        public static final int btn_cancel_actievent=0x7f06003a;
+        public static final int btn_cancel_profile_userinfo=0x7f06003e;
+        public static final int btn_submit_actievent=0x7f06003b;
+        public static final int btn_submit_profile_userinfo=0x7f06003f;
+        public static final int content_frame=0x7f060018;
+        public static final int dialog_avatar_frame=0x7f060020;
         public static final int disabled=0x7f060000;
-        public static final int drawer_layout=0x7f060011;
-        public static final int edittext_nickname=0x7f06002e;
-        public static final int fl_inner=0x7f060035;
+        public static final int drawer_layout=0x7f060017;
+        public static final int edittext_actievent_description=0x7f060012;
+        public static final int edittext_actievent_title=0x7f060011;
+        public static final int edittext_launch_actievent_endtime=0x7f060014;
+        public static final int edittext_launch_actievent_max_num=0x7f060016;
+        public static final int edittext_launch_actievent_min_num=0x7f060015;
+        public static final int edittext_launch_actievent_starttime=0x7f060013;
+        public static final int edittext_profile_userinfo_age=0x7f060029;
+        public static final int edittext_profile_userinfo_location=0x7f06002b;
+        public static final int edittext_profile_userinfo_new_account=0x7f060027;
+        public static final int edittext_profile_userinfo_sex=0x7f060028;
+        public static final int fl_inner=0x7f060040;
         public static final int flip=0x7f060008;
         public static final int gridview=0x7f060009;
         public static final int group_name=0x7f06000f;
         public static final int group_number=0x7f06000e;
         public static final int group_picture=0x7f06000d;
         public static final int group_time=0x7f060010;
-        public static final int headImageView=0x7f06003f;
-        public static final int imagebutton_sendmsg=0x7f06001c;
-        public static final int imageinfo_layout=0x7f060014;
-        public static final int imageview_profile_edit_avatar=0x7f06002c;
-        public static final int launch_acti_event_btn=0x7f06001e;
-        public static final int left_drawer=0x7f060013;
-        public static final int listview_my_actievent=0x7f060027;
-        public static final int login_btn_getpassword=0x7f060049;
-        public static final int login_btn_register=0x7f060048;
-        public static final int login_btn_submit=0x7f060047;
-        public static final int login_edittext_nickname=0x7f060045;
-        public static final int login_edittext_password=0x7f060044;
-        public static final int login_edittext_username=0x7f060043;
-        public static final int login_tv_title=0x7f060042;
+        public static final int headImageView=0x7f06004a;
+        public static final int imageinfo_layout=0x7f06001a;
+        public static final int imageview_profile_edit_avatar=0x7f060035;
+        public static final int launch_acti_event_btn=0x7f060025;
+        public static final int left_drawer=0x7f060019;
+        public static final int listview_my_actievent=0x7f060032;
+        public static final int login_btn_getpassword=0x7f060054;
+        public static final int login_btn_register=0x7f060053;
+        public static final int login_btn_submit=0x7f060052;
+        public static final int login_edittext_account=0x7f06004e;
+        public static final int login_edittext_nickname=0x7f060050;
+        public static final int login_edittext_password=0x7f06004f;
+        public static final int login_tv_title=0x7f06004d;
         public static final int manualOnly=0x7f060004;
-        public static final int more=0x7f06003e;
-        public static final int name=0x7f06003a;
-        public static final int navigation_drawer=0x7f06001a;
-        public static final int new_tip=0x7f06003b;
-        public static final int pager=0x7f060025;
-        public static final int pref_filtrate=0x7f060021;
-        public static final int pref_ipush_info=0x7f060020;
-        public static final int pref_language=0x7f060023;
-        public static final int pref_modi_pass=0x7f060022;
-        public static final int profile_about_image=0x7f06001b;
-        public static final int profile_edit=0x7f060028;
-        public static final int profile_store=0x7f060029;
+        public static final int more=0x7f060049;
+        public static final int name=0x7f060045;
+        public static final int new_tip=0x7f060046;
+        public static final int open_map_location=0x7f06003d;
+        public static final int pager=0x7f060031;
+        public static final int pref_effect_sound=0x7f06002e;
+        public static final int pref_exit=0x7f060030;
+        public static final int pref_ipush_info=0x7f06002d;
+        public static final int pref_modi_pass=0x7f06002f;
+        public static final int profile_edit=0x7f060034;
         public static final int pullDownFromTop=0x7f060005;
         public static final int pullFromEnd=0x7f060002;
         public static final int pullFromStart=0x7f060001;
         public static final int pullUpFromBottom=0x7f060006;
-        public static final int pull_to_refresh_image=0x7f060036;
-        public static final int pull_to_refresh_progress=0x7f060037;
-        public static final int pull_to_refresh_sub_text=0x7f060039;
-        public static final int pull_to_refresh_text=0x7f060038;
-        public static final int relativelayout_container=0x7f060046;
-        public static final int relativelayout_editprofile=0x7f060026;
+        public static final int pull_to_refresh_image=0x7f060041;
+        public static final int pull_to_refresh_progress=0x7f060042;
+        public static final int pull_to_refresh_sub_text=0x7f060044;
+        public static final int pull_to_refresh_text=0x7f060043;
+        public static final int relativelayout_container=0x7f060051;
+        public static final int relativelayout_editprofile=0x7f06001f;
         public static final int rotate=0x7f060007;
         public static final int scrollview=0x7f06000b;
-        public static final int scrollview_self=0x7f06002a;
-        public static final int section_label=0x7f060024;
-        public static final int setingLayout=0x7f060017;
-        public static final int settings_torch_panel=0x7f06001f;
-        public static final int summary=0x7f06003d;
-        public static final int textview1=0x7f06002d;
-        public static final int textview2=0x7f06002f;
-        public static final int textview3=0x7f060031;
-        public static final int textview4=0x7f060033;
-        public static final int textview_age=0x7f060032;
-        public static final int textview_location=0x7f060034;
-        public static final int textview_phonenumber=0x7f060030;
-        public static final int toggle=0x7f06003c;
-        public static final int userInfoLayout=0x7f060016;
-        public static final int usernameText=0x7f060040;
+        public static final int scrollview_self=0x7f060026;
+        public static final int setingLayout=0x7f06001d;
+        public static final int settings_torch_panel=0x7f06002c;
+        public static final int summary=0x7f060048;
+        public static final int textview1=0x7f060021;
+        public static final int textview2=0x7f060022;
+        public static final int textview3=0x7f060023;
+        public static final int textview4=0x7f06002a;
+        public static final int textview_age=0x7f060038;
+        public static final int textview_location=0x7f060039;
+        public static final int textview_location_actievent=0x7f06003c;
+        public static final int textview_nickname=0x7f060036;
+        public static final int textview_phonenumber=0x7f060037;
+        public static final int toggle=0x7f060047;
+        public static final int userInfoLayout=0x7f06001c;
+        public static final int usernameText=0x7f06004b;
         public static final int webview=0x7f06000a;
     }
     public static final class integer {
-        public static final int MAX100000=0x7f0a0007;
-        public static final int MAX36=0x7f0a0008;
-        public static final int MAX4=0x7f0a000a;
-        public static final int MAX6=0x7f0a0009;
-        public static final int abs__max_action_buttons=0x7f0a0005;
-        public static final int default_circle_indicator_orientation=0x7f0a0000;
-        public static final int default_title_indicator_footer_indicator_style=0x7f0a0001;
-        public static final int default_title_indicator_line_position=0x7f0a0002;
-        public static final int default_underline_indicator_fade_delay=0x7f0a0003;
-        public static final int default_underline_indicator_fade_length=0x7f0a0004;
-        public static final int num_cols=0x7f0a0006;
+        public static final int MAX100000=0x7f0b0008;
+        public static final int MAX36=0x7f0b0009;
+        public static final int MAX4=0x7f0b000b;
+        public static final int MAX6=0x7f0b000a;
+        public static final int abc_max_action_buttons=0x7f0b0000;
+        public static final int abs__max_action_buttons=0x7f0b0006;
+        public static final int default_circle_indicator_orientation=0x7f0b0001;
+        public static final int default_title_indicator_footer_indicator_style=0x7f0b0002;
+        public static final int default_title_indicator_line_position=0x7f0b0003;
+        public static final int default_underline_indicator_fade_delay=0x7f0b0004;
+        public static final int default_underline_indicator_fade_length=0x7f0b0005;
+        public static final int num_cols=0x7f0b0007;
     }
     public static final class layout {
         public static final int acti_event_listview_model=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_ui_main=0x7f030002;
-        public static final int drawer_list_item=0x7f030003;
-        public static final int fragment_about=0x7f030004;
-        public static final int fragment_acti_event=0x7f030005;
-        public static final int fragment_navigation_drawer=0x7f030006;
-        public static final int fragment_setting=0x7f030007;
-        public static final int fragment_ui_main=0x7f030008;
-        public static final int fragment_userinfo=0x7f030009;
-        public static final int fragment_viewpager_my_actievent=0x7f03000a;
-        public static final int fragment_viewpager_userinfo=0x7f03000b;
-        public static final int pull_to_refresh_header_horizontal=0x7f03000c;
-        public static final int pull_to_refresh_header_vertical=0x7f03000d;
-        public static final int toggle_divider=0x7f03000e;
-        public static final int toggle_preference=0x7f03000f;
-        public static final int toolbox_item_about=0x7f030010;
-        public static final int toolbox_item_acti_event=0x7f030011;
-        public static final int toolbox_item_imageinfo=0x7f030012;
-        public static final int toolbox_item_setting=0x7f030013;
-        public static final int toolbox_item_userinfo=0x7f030014;
-        public static final int ui_login=0x7f030015;
+        public static final int activity_launch_actievent=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int fragment_about=0x7f030003;
+        public static final int fragment_acti_event=0x7f030004;
+        public static final int fragment_profile_userinfo=0x7f030005;
+        public static final int fragment_setting=0x7f030006;
+        public static final int fragment_userinfo=0x7f030007;
+        public static final int fragment_viewpager_my_actievent=0x7f030008;
+        public static final int fragment_viewpager_userinfo=0x7f030009;
+        public static final int launch_actievent_title_bar=0x7f03000a;
+        public static final int my_location_layout=0x7f03000b;
+        public static final int profile_userinfo_title_bar=0x7f03000c;
+        public static final int pull_to_refresh_header_horizontal=0x7f03000d;
+        public static final int pull_to_refresh_header_vertical=0x7f03000e;
+        public static final int toggle_divider=0x7f03000f;
+        public static final int toggle_preference=0x7f030010;
+        public static final int toolbox_item_about=0x7f030011;
+        public static final int toolbox_item_acti_event=0x7f030012;
+        public static final int toolbox_item_imageinfo=0x7f030013;
+        public static final int toolbox_item_setting=0x7f030014;
+        public static final int toolbox_item_userinfo=0x7f030015;
+        public static final int ui_login=0x7f030016;
     }
     public static final class menu {
-        public static final int global=0x7f0d0000;
-        public static final int ui_main=0x7f0d0001;
+        public static final int ui_main=0x7f0e0000;
     }
     public static final class raw {
         public static final int pull_event=0x7f050000;
@@ -505,11 +536,12 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0c0000;
+        public static final int AppBaseTheme=0x7f0d0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0c0001;
+        public static final int AppTheme=0x7f0d0001;
+        public static final int Widget_EditText=0x7f0d0002;
     }
     public static final class styleable {
         /** Attributes that can be used with a PullToRefresh.

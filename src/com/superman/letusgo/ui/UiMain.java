@@ -7,10 +7,10 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,9 +20,10 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.superman.letusgo.R;
+import com.superman.letusgo.base.BaseUi;
 
 @SuppressLint("NewApi")
-public class UiMain extends FragmentActivity implements OnClickListener {
+public class UiMain extends BaseUi implements OnClickListener {
 	private DrawerLayout mDrawerLayout;
 	private ScrollView mDrawerLeft;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -36,8 +37,8 @@ public class UiMain extends FragmentActivity implements OnClickListener {
 	private View actiEventLayout;
 	private View userInfoLayout;
 	private View aboutLayout;
-
-//	private Fragment mFragment;
+	
+	// private Fragment mFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -164,16 +165,16 @@ public class UiMain extends FragmentActivity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.activityInfoLayout:
-			selectItem(0,new UiActiEvent());
+			selectItem(0, new UiActiEvent());
 			break;
 		case R.id.userInfoLayout:
-			selectItem(1,new UiInfo());
+			selectItem(1, new UiInfo());
 			break;
 		case R.id.setingLayout:
-			selectItem(2,new UiSetting());
+			selectItem(2, new UiSetting());
 			break;
 		case R.id.aboutInfoLayout:
-			selectItem(3,new UiAbout());
+			selectItem(3, new UiAbout());
 			break;
 
 		}
@@ -181,9 +182,9 @@ public class UiMain extends FragmentActivity implements OnClickListener {
 
 	private void selectItem(int position, Fragment fragment) {
 		// update the main content by replacing fragments
-//		Bundle args = new Bundle();
-//		args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-//		fragment.setArguments(args);
+		// Bundle args = new Bundle();
+		// args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
+		// fragment.setArguments(args);
 
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		fragmentManager.beginTransaction()
@@ -194,4 +195,12 @@ public class UiMain extends FragmentActivity implements OnClickListener {
 		mDrawerLayout.closeDrawer(mDrawerLeft);
 	}
 
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK
+				&& event.getRepeatCount() == 0) {
+			doFinish();
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 }

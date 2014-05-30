@@ -3,10 +3,10 @@
     android:id="@+id/activity_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/user_profile_background"
+    android:background="@drawable/main_bg"
     android:orientation="vertical" >
 
-    <com.app.letusgo.util.ImageUtil
+    <com.superman.letusgo.ui.util.RoundedImageUtil
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -26,12 +26,12 @@
             android:layout_width="224dip"
             android:layout_height="36.0dip"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/orange"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/login_submit_account_title" />
+            android:text="@string/login_submit_account_title"
+            android:textColor="@color/orange" />
 
         <EditText
-            android:id="@+id/login_edittext_username"
+            android:id="@+id/login_edittext_account"
             android:layout_width="224.0dip"
             android:layout_height="36.0dip"
             android:layout_below="@id/login_tv_title"
@@ -52,7 +52,7 @@
             android:id="@+id/login_edittext_password"
             android:layout_width="224.0dip"
             android:layout_height="36.0dip"
-            android:layout_below="@id/login_edittext_username"
+            android:layout_below="@id/login_edittext_account"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15.0dip"
             android:background="@drawable/setting_goal_box_bg"
@@ -82,7 +82,8 @@
             android:singleLine="true"
             android:textColor="@color/dark_grey"
             android:textColorHint="@color/light_grey"
-            android:textSize="14.0sp" />
+            android:textSize="14.0sp"
+            android:visibility="gone" />
 
         <RelativeLayout
             android:id="@+id/relativelayout_container"

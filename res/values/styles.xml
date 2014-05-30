@@ -16,5 +16,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name="Widget.EditText" parent="@android:style/Widget.EditText">
+       <item name="android:textSize">@dimen/text3Size</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">@color/edit_hint_text_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
 
 </resources>

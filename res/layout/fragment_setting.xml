@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -27,11 +28,11 @@
             <include layout="@layout/toggle_divider" />
 
             <com.superman.letusgo.ui.util.StylePreference
-                android:id="@+id/pref_filtrate"
-                app:name="筛选设置"
+                android:id="@+id/pref_effect_sound"
+                app:name="特效声音"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                app:type="normal" />
+                app:type="switch" />
 
             <include layout="@layout/toggle_divider" />
 
@@ -40,17 +41,17 @@
                 app:name="修改密码"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                app:type="switch" />
+                app:type="normal" />
 
             <include layout="@layout/toggle_divider" />
 
             <com.superman.letusgo.ui.util.StylePreference
-                android:id="@+id/pref_language"
-                app:name="language"
+                android:id="@+id/pref_exit"
+                app:name="退出"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:enabled="true"
-                app:type="switch" />
+                app:type="normal" />
         </LinearLayout>
     </LinearLayout>
 

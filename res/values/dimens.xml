@@ -9,5 +9,27 @@
          https://developer.android.com/design/patterns/navigation-drawer.html
     -->
     <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="text1Size">20.0dip</dimen>
+    <dimen name="text2Size">19.0dip</dimen>
+    <dimen name="text3Size">18.0dip</dimen>
+    <dimen name="text4Size">17.0dip</dimen>
+    <dimen name="text5Size">16.0dip</dimen>
+    <dimen name="text6Size">15.0dip</dimen>
+    <dimen name="text7Size">14.0dip</dimen>
+    <dimen name="text8Size">13.0dip</dimen>
+    <dimen name="text9Size">12.0dip</dimen>
+    <dimen name="textminSize">9.0dip</dimen>
+    <bool name="abc_action_bar_expanded_action_views_exclusive">false</bool>
+    <dimen name="abc_action_bar_default_height">56dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding">4dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin">9dip</dimen>
+    <dimen name="abc_action_bar_subtitle_text_size">14dp</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin">-3dp</dimen>
+    <dimen name="abc_action_bar_title_text_size">18dp</dimen>
+    <dimen name="abc_action_button_min_width">64dip</dimen>
+    <dimen name="abc_search_view_text_min_width">192dip</dimen>
+
+    <integer name="abc_max_action_buttons">5</integer>
+    
 
 </resources>

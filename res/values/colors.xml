@@ -14,8 +14,10 @@
     <color name="middle_grey">#ff808080</color>
     <color name="dark_grey">#ff404040</color>
     <color name="orange">#ffdd7a58</color>
-     <color name="white_line">#50ffffff</color>
-      <color name="classB">#353535</color>
-        <color name="common_white">#ffffff</color>
+    <color name="white_line">#50ffffff</color>
+    <color name="classB">#353535</color>
+    <color name="common_white">#ffffff</color>
+    <color name="edit_hint_text_color">#ffaaaaaa</color>
+    <color name="edit_text_color">#ff2b2b2b</color>
 
 </resources>

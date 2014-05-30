@@ -8,5 +8,11 @@
         android:showAsAction="ifRoom|withText"
         android:title="@string/action_websearch"/>
     
+    <item
+        android:id="@+id/action_openmap"
+        android:icon="@drawable/action_openmap"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_openmap"/>
+    
 
 </menu>
